@@ -1,0 +1,34 @@
+@import 'assets/reset';
+@import 'assets/vars';
+@import 'assets/mixins';
+
+.header {
+	padding: 20px 15px;
+}
+
+.nav {
+	.nav-list {
+		li {
+			&:hover {
+				color: yellow;
+			} 
+			&:last-child {
+				color: green;
+				&:hover {
+					color: blue;
+				}
+			}
+		}
+		a {
+			color: $white;
+			&:hover {
+				color: red;
+				cursor: poi;
+			}
+		}
+	}
+}
+
+h1 {
+	@include title;
+}
