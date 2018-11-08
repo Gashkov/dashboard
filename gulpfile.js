@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
     return gulp.src('app/sass/main.scss')
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
     .pipe(gulp.dest('app/css/'))
     .pipe(browserSync.reload({stream: true}))
