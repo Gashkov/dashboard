@@ -1,23 +1,19 @@
-@import 'assets/vars';
 
 body,
 html {
 	margin: 0;
 	padding: 0;
+	font-family: Arial;
 	height: 100%;
-	background-color: $primaryBackground;
-	display: flex;
-	font-family: $primaryFont;
 }
 
 ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-	color: #000;
-}
-
-h1 {
-	color: $white;
+	color: $primaryColor;
+	text-decoration: none;
 }

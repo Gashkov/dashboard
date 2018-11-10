@@ -4,24 +4,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<a href="#" class="logo">
-				<img src="" alt="logo">
-			</a>
-			<nav class="nav">
-				<ul class="nav-list">
-					<li><a><i>Item1</i></a></li>
-					<li>Item2</li>
-					<li>Item3</li>
-				</ul>
-			</nav>
+			<button class="hamburger"><i class="fas fa-bars"></i></button>
 		</header>
-		<h1 class="title">Hello world!</h1>
+		<main class="main">
+			<aside class="aside">
+				<h3 class="aside__title">Menu</h3>
+				<ul class="aside__list">
+					<li class="aside__item">
+						<a href="#"><i class="fas fa-home"></i>Overview</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="far fa-chart-bar"></i>Analytics</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="fas fa-user"></i>Your Profile</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="far fa-list-alt"></i>Invoice</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="fas fa-briefcase"></i>Marketplace</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="fas fa-project-diagram"></i>Projects</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="fas fa-envelope"></i>Inbox</a>
+					</li>
+					<li class="aside__item">
+						<a href="#"><i class="far fa-life-ring"></i>Support</a>
+					</li>
+				</ul>
+			</aside><!--end aside-->
+			<div class="main-content">
+				<div class="main-content__header">
+					
+				</div>
+				<div class="profile">
+					<div class="profile__content">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<nav>
+							  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+							    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+							    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+							    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+							  </div>
+							</nav>
+							<div class="tab-content" id="nav-tabContent">
+							  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...1</div>
+							  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...2</div>
+							  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...3</div>
+							</div>
+					</div><!--end profile__content-->
+					<div class="profile__sidebar">
+						
+					</div><!--end profile__sidebar-->
+				</div><!--end profile-->
+			</div><!--end main-content-->
+		</main>
 	</div>
-	<script src="js/"></script>
+	<script src="js/all.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
